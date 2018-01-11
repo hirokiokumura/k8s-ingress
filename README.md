@@ -140,3 +140,8 @@ Events:
 ---
 # Brawse
 <img src="./images/browse_certificate.png" />
+
+---
+# Misc
+## IngressのHealthCheck
+* [メルカリ社内ドキュメントツールの Crowi を Kubernetes に載せ替えました - Mercari Engineering Blog](http://tech.mercari.com/entry/2017/09/11/150000)
