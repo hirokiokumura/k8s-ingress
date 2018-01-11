@@ -119,10 +119,16 @@ Events:
 ```
 
 ---
-# Kubernetes Enging
+# Kubernetes Engine
 <img src="./images/deployment.png" />
 <img src="./images/ingress.png" />
 
+---
+# Compute Engine
+<img src="./images/instance.png" />
+<img src="./images/instance_group.png" />
+
+---
 # ネットワークサービス
 <img src="./images/loadbalancer.png" />
 <img src="./images/global_transfer_rule.png" />
@@ -131,6 +137,6 @@ Events:
 <img src="./images/certificate.png" />
 
 
-
+---
 # Brawse
 <img src="./images/browse_certificate.png" />
