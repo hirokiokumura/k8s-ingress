@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: sandbox
+---
+apiVersion: apps/v1beta1  
+kind: Deployment  
+metadata:  
+  name: test-app
+  namespace: sandbox
+spec:  
+  replicas: 1
+  revisionHistoryLimit: 3
+  template:
+    metadata:
+      namespace: sandbox
+      labels:
+        run: test-app
+        version: latest
+    spec:
+      containers:
+      - name: test-app
+        image: asia.gcr.io/geometric-sled-187609/hello:latest
+        ports:
+        - containerPort: 8080
