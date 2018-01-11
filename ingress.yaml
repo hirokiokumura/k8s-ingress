@@ -5,10 +5,19 @@ metadata:
   namespace: sandbox
   annotations:
     kubernetes.io/ingress.global-static-ip-name: "test-ip"
+    kubernetes.io/ingress.class: "gce"
+    kubernetes.io/tls-acme: "true"
 #    kubernetes.io/ingress.allow-http: "false"
 spec:  
   tls:
-  - secretName: foo-secret 
-  backend:
-    serviceName: test-app
-    servicePort: 8080
+    - secretName: kubernetes-ingress-tls
+      hosts:
+      - www.hiroki.work
+  rules:
+    - host: www.hiroki.work
+      http:
+        paths:
+        - path: /*
+          backend:
+            serviceName: test-app
+            servicePort: 8080
