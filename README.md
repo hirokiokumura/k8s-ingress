@@ -145,3 +145,14 @@ Events:
 # Misc
 ## IngressのHealthCheck
 * [メルカリ社内ドキュメントツールの Crowi を Kubernetes に載せ替えました - Mercari Engineering Blog](http://tech.mercari.com/entry/2017/09/11/150000)
+
+## Basic認証
+* [Advanced Ingress Configuration – Giant Swarm Documentation](https://docs.giantswarm.io/guides/advanced-ingress-configuration/#session-affinity)
+
+## sticky-sessions
+* [Kubernetes ingress](https://blog.shanelee.name/2017/10/16/kubernetes-ingress-and-sticky-sessions/)
+
+## ingress-nginx
+### deploy
+* https://github.com/kubernetes/ingress-nginx/tree/master/deploy#gce---gke
+
