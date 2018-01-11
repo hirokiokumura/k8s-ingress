@@ -5,13 +5,9 @@ metadata:
   namespace: sandbox
   annotations:
     kubernetes.io/ingress.global-static-ip-name: "test-ip"
-#  annotations:
 #    kubernetes.io/ingress.allow-http: "false"
 spec:  
-#  rules:
-#  - host: test-app.com
   tls:
-#    secretName: test-app.com-ssl
   - secretName: foo-secret 
   backend:
     serviceName: test-app
