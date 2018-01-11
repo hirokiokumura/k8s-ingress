@@ -91,7 +91,7 @@ test-ingress   *         35.227.228.21   80, 443   33m
 * GCPの[Kubernetes Enging] > [検出と負荷分散]にingress作成までのインジケータが表示されるので進捗確認ができる
 
 ```
-$kubectl  describe ing -n sandbox                                                   (gke_geometric-sled-187609_asia-northeast1-a_sandbox/default)
+$kubectl  describe ing -n sandbox
 Name:             test-ingress
 Namespace:        sandbox
 Address:          35.227.228.21
@@ -138,7 +138,7 @@ Events:
 
 
 ---
-# Brawse
+# Browser 
 <img src="./images/browse_certificate.png" />
 
 ---
